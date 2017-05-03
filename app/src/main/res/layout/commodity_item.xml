@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_5"
+            android:background="@color/view_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_35"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/payment_ck_bills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_15"
+                android:background="@drawable/check_bg"
+                android:button="@null"
+                android:focusable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                android:text="@string/tv_bills_id_title"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_bills_id_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/bills_id_tv_color" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/size_5"
+            android:background="@color/activity_bg_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_10"
+            android:layout_marginTop="@dimen/size_5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_payment_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="糯米"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_bank_name_content_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_bank_name_title"
+                        android:textColor="@color/bills_tv_color" />
+
+                    <TextView
+                        android:id="@+id/tv_bank_name_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/bills_tv_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_sum_money_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_sum_money_title"
+                        android:textColor="@color/bills_tv_color" />
+
+                    <TextView
+                        android:id="@+id/tv_sum_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/bills_tv_color" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_already_money_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_already_money_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_already_money_title"
+                        android:textColor="@color/bills_tv_color" />
+
+                    <TextView
+                        android:id="@+id/tv_already_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/bills_tv_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_await_money_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_await_money_title"
+                        android:textColor="@color/bills_tv_color" />
+
+                    <TextView
+                        android:id="@+id/tv_await_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/bills_tv_color" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/size_15"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ed_now_money_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_now_money_title"
+                        android:textColor="@color/bills_tv_color" />
+
+                    <EditText
+                        android:id="@+id/ed_now_money"
+                        android:layout_width="@dimen/size_90"
+                        android:layout_height="@dimen/size_30"
+                        android:background="@drawable/input_money_bg"
+                        android:gravity="center"
+                        android:inputType="datetime" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/activity_bg_color" />
+
+        <RelativeLayout
+            android:id="@+id/layout_payment_id_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_5"
+            android:layout_marginTop="@dimen/size_10">
+
+            <LinearLayout
+                android:id="@+id/layout_payment_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:focusable="false"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_payment_id_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/size_15"
+                    android:gravity="center_vertical"
+                    android:text="@string/tv_payment_id_title"
+                    android:textColor="@color/bills_tv_color"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/tv_payment_id"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/size_20"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:minLines="2"
+                    android:text="sdfsd"
+                    android:textColor="@color/bills_ed_color"
+                    android:textSize="@dimen/font_size_16" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/img_payment_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/size_15"
+                android:src="@mipmap/jt3" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/activity_bg_color" />
+
+        <EditText
+            android:id="@+id/ed_payment_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/size_15"
+            android:paddingRight="@dimen/size_15"
+            android:layout_marginTop="@dimen/size_10"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="@string/ed_hint_title"
+            android:minLines="3"
+            android:textSize="@dimen/font_size_16" />
+    </LinearLayout>
+
+</LinearLayout>

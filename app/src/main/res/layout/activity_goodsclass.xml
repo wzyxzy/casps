@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/Goodsclass_top_Re"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50"
+        android:background="@drawable/bottom_line_bg_line">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/Goodsclass_add_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginBottom="@dimen/size_10"
+            android:layout_marginLeft="@dimen/main_margin"
+            android:layout_marginTop="@dimen/size_10"
+            android:paddingLeft="@dimen/size_20"
+            android:paddingRight="@dimen/size_20"
+            app:fb_borderColor="@color/title_bg"
+            app:fb_borderWidth="1dp"
+            app:fb_defaultColor="@color/title_bg"
+            app:fb_focusColor="@color/title_bg"
+            app:fb_radius="@dimen/size_5"
+            app:fb_text="@string/add"
+            app:fb_textColor="@color/white"
+            app:fb_textSize="@dimen/btn_size" />
+
+        <TextView
+            android:id="@+id/Goodsclass_do_desc_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/size_10"
+            android:layout_marginRight="@dimen/main_margin"
+            android:layout_marginTop="@dimen/size_10"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/dodesc"
+            android:textColor="@color/title_bg"
+            android:textSize="@dimen/btn_size" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/Goodsclass_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Goodsclass_top_Re"
+        android:layout_marginTop="@dimen/size_10"
+        android:background="@color/transParent"
+        android:horizontalSpacing="@dimen/size_3"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/size_3"></GridView>
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@color/main_bg"
+         android:layout_below="@+id/Goodsclass_grid"/>
+    <ImageView
+        android:id="@+id/Goodsclass_totop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/size_25"
+        android:src="@mipmap/jt2"
+        android:visibility="gone" />
+</RelativeLayout>
